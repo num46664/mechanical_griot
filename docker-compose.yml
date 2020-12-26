@@ -1,9 +1,9 @@
-#https://jonathas.com/scheduling-tasks-with-cron-on-docker/
+version: "3"
 services:
   cron:
-    restart: true
-    build: cron
+    build: ./cron
+    restart: "always"
     volumes:
       - /var/log/crontainer:/var/log/crontainer
-      - cron/crontabs:/etc/crontabs
-      - src:/pyscripts
+      - ./cron/crontabs:/etc/crontabs
+      - ./src:/pyscripts
