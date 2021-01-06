@@ -1,2 +1,2 @@
-import griot   
+from griotlib import griot   
 griot.welcome()

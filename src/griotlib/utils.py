@@ -1,5 +1,5 @@
 from mastodon import Mastodon
-import config
+import griotlib.config as config
 
 # returns config object
 # this object is needed to authenticate

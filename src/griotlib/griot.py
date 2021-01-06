@@ -1,6 +1,6 @@
 from mastodon import Mastodon
 from time import sleep
-import utils
+import griotlib.utils as utils
 CONFIG = utils.conf()
 
 mastodon = Mastodon(

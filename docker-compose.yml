@@ -6,4 +6,4 @@ services:
     volumes:
       - /var/log/crontainer:/var/log/crontainer
       - ./cron/crontabs:/etc/crontabs
-      - ./src:/pyscripts
+      - ./mechanical_griot:/mechanical_griot

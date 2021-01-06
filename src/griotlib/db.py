@@ -1,6 +1,6 @@
 import sqlite3
-import utils
-CONFIG = utils
+import griotlib.utils as utils
+CONFIG = utils.conf()
 
 def create_tables():
     conn,curs = _connect()
@@ -14,5 +14,5 @@ def new_user(id,count):
     conn.commit()
 
 def _connect():
-    conn = sqlite3.connect(CONFIG.db_name)
-    return conn,conn.cursor
+    conn = sqlite3.connect(CONFIG["db_name"])
+    return conn,conn.cursor()
